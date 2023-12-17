@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --header-font: "Raleway", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("https://cdn.turningpointplus.org/web/images/main_bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--header-font);
+  color: white;
+  margin: 2rem auto;
+}
+
+.main__header h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: auto;
+  padding: 1rem;
+  letter-spacing: 0.024rem;
+}
+
+.main__header h1 span {
+  font-weight: 600;
+}
+
+.search_field {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 0.5rem 2.5rem;
+  border-radius: 50px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  width: 40%;
+}
+
+.error-message {
+  font-family: var(--header-font);
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 0 auto;
+  text-align: center;
+  height: 100vh;
+}
+
+.playlist__container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.playlist__container img {
+  width: 315px;
+  height: 320px;
+  margin-bottom: 2.75rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.playlist__container img:hover {
+  opacity: 0.8;
+}
+
+
+.search_field.has-content {
+  width: 50%; /* Adjust the width as needed */
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.search_field.has-content::placeholder {
+  color: black;
+  opacity: 0.7;
+}
+
+
+@media screen and (min-width: 768px) {
+  .main__header,
+  .playlist__container {
+    width:80%;
+  }
+
+  .main__header h1 {
+    font-size: 2.15rem;
+  }
+
+  .playlist__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html,
+  body {
+    height: 100%;
+  }
+
+  .main__header,
+  .playlist__container {
+    width: 1020px;
+  }
+
+  .error-message {
+    height: 100%;
+  }
+
+  .main__header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .main__header h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .search_field {
+    margin: 0;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    width: 17%;
+    padding: 0 1rem;
+  }
+
+  .playlist__container{
+    justify-content: space-between;
+  }
+
+
+}
