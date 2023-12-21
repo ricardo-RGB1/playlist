@@ -117,24 +117,16 @@
   .playlist__container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 1045px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-  }
 
 
   .main__header,
   .playlist__container {
-    width: 1000px;
+    width: 1025px;
   }
 
   .error-message {
@@ -162,10 +154,7 @@
   }
 
 
-  .playlist__container{
-    align-content: space-between;
-    
-  }
+
 
 
 
