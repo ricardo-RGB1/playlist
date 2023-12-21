@@ -10,15 +10,21 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url("https://cdn.turningpointplus.org/web/images/main_bg1.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("https://cdn.turningpointplus.org/web/images/main_bg1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+
 
 .main__header {
   display: flex;
@@ -27,6 +33,7 @@ body {
   font-family: var(--header-font);
   color: white;
   margin: 2rem auto;
+
 }
 
 .main__header h1 {
@@ -69,7 +76,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-
 }
 
 .playlist__container img {
@@ -115,15 +121,20 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  html,
+@media screen and (min-width: 1045px) {
   body {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
   }
+
 
   .main__header,
   .playlist__container {
-    width: 1020px;
+    width: 1000px;
   }
 
   .error-message {
@@ -146,13 +157,16 @@ body {
     margin: 0;
     padding: 0.5rem 1.5rem;
     text-align: center;
-    width: 17%;
+    width: 20%;
     padding: 0 1rem;
   }
 
+
   .playlist__container{
-    justify-content: space-between;
+    align-content: space-between;
+    
   }
+
 
 
 }
